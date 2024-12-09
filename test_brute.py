@@ -16,7 +16,9 @@ def describe_Brute():
         def it_returns_true_correct_guess(cracker):
             assert cracker.bruteOnce("TDD") == True
 
-        
+        def it_works_even_with_empty_string():
+            test = Brute("")
+            assert test.bruteOnce("") == True
 
     def describe_bruteMany():
         def it_returns_after_success(cracker):
@@ -26,5 +28,4 @@ def describe_Brute():
             cracker = Brute("aijwfijafijawifjawifjaif")
             assert cracker.bruteMany(100) == -1
             
-        def hash_is_called_when_creating_new_class():
-            pass
+            
