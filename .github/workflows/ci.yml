@@ -38,7 +38,7 @@ jobs:
 
       - name: First Suite
         run: |
-          pytest-spec test_brute.py
+          pytest -spec test_brute.py
 
       - name: Second Suite
         run: |
