@@ -27,5 +27,7 @@ def describe_Brute():
         def it_returns_negative_one_when_timed_out():
             cracker = Brute("aijwfijafijawifjawifjaif")
             assert cracker.bruteMany(100) == -1
+
+
             
             
