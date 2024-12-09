@@ -20,6 +20,15 @@ def describe_Brute():
             test = Brute("")
             assert test.bruteOnce("") == True
 
+        def it_returns_valueError_when_not_a_string():
+            with pytest.raises(TypeError):
+                test = Brute(15)
+
+
+        def it_works_even_with_long_strings():
+            test = Brute("AWIJFOAIWJFIJijofijaIFJAfijawiofjAOIjfAijfoiajwfoijFAwfoijAOIWfjawf")
+            #if it failed it would raise an error 
+
     def describe_bruteMany():
         def it_returns_after_success(cracker):
             assert cracker.bruteMany() != -1
